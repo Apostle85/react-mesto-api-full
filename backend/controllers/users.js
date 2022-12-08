@@ -135,6 +135,7 @@ module.exports.login = (req, res, next) => {
           maxAge: 3600000,
           httpOnly: true,
           sameSite: true,
+          domain: 'eliproject.students.nomoredomains.club'
         });
       return res.send({ data: 'Авторизация прошла успешно!' });
     })

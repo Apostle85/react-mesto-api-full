@@ -13,7 +13,7 @@ router.post('/signup', validateSignUp, createUser);
 
 router.use(auth);
 
-router.get('/signout', (req, res) => res.clearCookie('jwt').send({ message: 'Выход' }));
+router.get('/signout', (req, res) => res.clearCookie('jwt', { domain: 'eliproject.students.nomoredomains.club' }).send({ message: 'Выход' }));
 
 router.use('/users', userRouter);
 router.use('/cards', cardRouter);
