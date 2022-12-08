@@ -1,8 +1,6 @@
 // Токен
 // export const token = "a03d4118-2056-418e-8efc-0823108695ca";
-// export const identificator = "cohort-48";
-// export const baseUrl = "https://eliproject.students.nomoredomains.club";
-export const baseUrl = "api.eliproject.students.nomoredomains.club";
+export const baseUrl = "https://api.eliproject.students.nomoredomains.club";
 
 export const phraseMistake = "Что-то пошло не так!\nПопробуйте ещё раз.";
 export const phraseLoginCorrect = "Вы успешно вошли!";

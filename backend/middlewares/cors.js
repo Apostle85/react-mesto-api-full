@@ -1,5 +1,6 @@
 const allowedCors = [
-  "http://localhost:3001",
+  "https://eliproject.students.nomoredomains.club",
+  "http://eliproject.students.nomoredomains.club"
 ];
 
 // Значение для заголовка Access-Control-Allow-Methods по умолчанию (разрешены все типы запросов)
