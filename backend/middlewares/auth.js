@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
   if (!token) return next(new IncorrectProfileError('Необходима авторизация'));
   let payload;
   try {
-    payload = jwt.verify(token,  NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key');
+    payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key');
   } catch (err) {
     return next(new IncorrectProfileError('Передан неверный токен'));
   }
