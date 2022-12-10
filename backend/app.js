@@ -24,9 +24,6 @@ const limiter = rateLimit({
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-// Apply the rate limiting middleware to all requests
-app.use(limiter);
-
 app.use(helmet());
 app.use(cors);
 app.use(cookieParser());
@@ -36,6 +33,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
 app.use(requestLogger);
+
+// Apply the rate limiting middleware to all requests
+app.use(limiter);
 
 app.get('/crash-test', () => {
   setTimeout(() => {
