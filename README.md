@@ -4,6 +4,7 @@
 IP 51.250.100.44
 Frontend https://eliproject.students.nomoredomains.club
 Backend https://api.eliproject.students.nomoredomains.club
+[Примечание! аренда хостинга приостановлена]
 
 Ссылка на репозиторий:
 https://github.com/Apostle85/react-mesto-api-full
